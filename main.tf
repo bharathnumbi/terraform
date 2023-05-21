@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.aws_region
+  region = ap-south-2
 }
 
 #Create security group with firewall rules
