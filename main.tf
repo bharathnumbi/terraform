@@ -1,5 +1,5 @@
 provider "aws" {
-  region = ap-south-2
+  region = "ap-south-1"
 }
 
 #Create security group with firewall rules
@@ -36,7 +36,7 @@ resource "aws_security_group" "my_security_group" {
 
 # Create AWS ec2 instance
 resource "aws_instance" "myFirstInstance" {
-  ami           = var.ami_id
+  ami           = var.ami-0b08bfc6ff7069aff
   key_name = var.key_name
   instance_type = var.instance_type
   security_groups= [var.security_group]
